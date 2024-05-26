@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Menti Question Detector</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      width: 200px;
+      padding: 10px;
+    }
+    #logs {
+      white-space: pre-wrap;
+      background-color: #f0f0f0;
+      padding: 10px;
+      border: 1px solid #ccc;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Menti Detector</h1>
+  <div>
+    <label for="api-key">API Key:</label>
+    <input type="text" id="api-key" name="api-key">
+    <button id="save-key">Save</button>
+  </div>
+  <div>
+    <p>Status:</p>
+    <p id="menti-status">Connection to Menti: <span style="color: orange;">Not Checked</span></p>
+    <p id="chatgpt-status">Connection to ChatGPT: <span style="color: orange;">Not Checked</span></p>
+    <button id="check-key">Check API Key</button>
+  </div>
+  <div id="logs"></div>
+  <script src="popup.js"></script>
+</body>
+</html>
